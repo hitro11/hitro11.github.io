@@ -137,11 +137,11 @@ a.navbar-brand:hover {
   background: #0b1c28;
 }
 
-#pcbuilders-tile {
+#ytplayer-tile {
   background-size: 100% 100%;
-  background-image: url("https://preview.ibb.co/hTDC27/pcbuilders.png");
+  background-image: url("https://image.ibb.co/buLz1x/ytplayer.png");
 }
-#pcbuilders-tile:hover {
+#ytplayer-tile:hover {
   background: #0b1c28;
 }
 
@@ -164,7 +164,7 @@ a.navbar-brand:hover {
 .project-tile {
   margin: 0 2em 0 0;
   width: 35%;
-  height: 25em;
+  height: 22em;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -252,7 +252,7 @@ a.navbar-brand:hover {
   }
 
   .project-tile {
-    height: 10em;
+    height: 12em;
     width: 100%;
     margin: 0 1em 1.7em 1em;
   }
@@ -349,7 +349,7 @@ a.navbar-brand:hover {
   .project-tile {
     height: 12em;
     width: 45%;
-    margin: 0;
+    margin: 0 1em 0 1em;
   }
   .project-tile h2 {
     font-size: 1.3em;
@@ -387,12 +387,12 @@ a.navbar-brand:hover {
   }
 
   .project-tile {
-    height: 15.5em;
+    height: 17em;
     width: 45%;
     margin: 0 1em 0 1em;
   }
   .project-tile h2 {
-    font-size: 2.75em;
+    font-size: 2.1em;
   }
   .project-tile h6 {
     font-size: 0.9em;
@@ -407,6 +407,52 @@ a.navbar-brand:hover {
 
   .contact-icons .fa-3x {
     font-size: 3.5em;
+  }
+}
+#particles-js {
+  z-index: 4;
+  height: 100%;
+  height: 100vh;
+}
+
+@media only screen and (min-width: 1442px) and (max-width: 1920) {
+  .prompt h1 {
+    font-size: 6em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  .page-section {
+    padding: 2em 0 3em 0;
+  }
+
+  #welcome-section {
+    padding-bottom: 10em;
+  }
+
+  .project-tile {
+    height: 29em;
+    width: 45%;
+    margin: 0 1em 0 1em;
+  }
+  .project-tile h2 {
+    font-size: 2.7em;
+  }
+  .project-tile h6 {
+    font-size: 1.5em;
+  }
+
+  .form-container form {
+    width: 45%;
+  }
+  .form-container form .btn-primary {
+    width: 40%;
+  }
+
+  .contact-icons .fa-3x {
+    font-size: 4em;
   }
 }
 #particles-js {
