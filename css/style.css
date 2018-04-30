@@ -1,0 +1,416 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  color: #e8e8e8;
+}
+
+.page-section {
+  padding: 3em 0 4.5em 0;
+}
+
+#particles-js, #contact-section {
+  background-image: linear-gradient(132deg, #00111e 0%, #0b1c28 74%);
+}
+
+#projects {
+  background-image: linear-gradient(132deg, #e5e5e5 0%, #bcbcbc 74%);
+}
+
+.fa-3x, .fa-2x {
+  margin: 20px;
+  color: #e8e8e8;
+}
+
+:target {
+  display: block;
+  position: relative;
+  top: -10px;
+}
+
+.prompt {
+  margin: 1.5em 0 1.1em 0;
+}
+
+.prompt h1 {
+  font-size: 4em;
+  color: #ff4444;
+}
+
+.text-white {
+  color: #e8e8e8;
+}
+
+.text-bg {
+  color: #0b1c28 !important;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  padding: 15px 0 10px 0;
+  background-image: linear-gradient(132deg, #00111e 0%, #0b1c28 74%);
+}
+
+.nav-link {
+  color: #ff4444;
+  margin: 0 7px 0 7px;
+  font-size: 1.05em;
+}
+.nav-link:hover {
+  color: #ff3535;
+}
+
+span.navbar-toggler-icon {
+  border: 1px solid #ff4444;
+  color: #ff4444;
+}
+
+a.active {
+  color: #ff3535 !important;
+  background: none !important;
+  border: 1px solid #ff3535;
+}
+
+a.navbar-brand {
+  color: #ff4444;
+  font-size: 25px;
+  margin-top: -10px;
+}
+a.navbar-brand:hover {
+  color: #ff3535;
+}
+
+#welcome-section {
+  position: absolute;
+  z-index: 5;
+  height: 100vh;
+  padding: 1em 0 0 0;
+}
+
+#welcome-container {
+  margin: 30vh 0 0 0;
+}
+#welcome-container h2 {
+  margin: 1em 0 3em 0;
+}
+#welcome-container .break {
+  display: none;
+}
+
+#arrow-down {
+  color: #e8e8e8;
+  margin-top: 50px;
+  font-size: 3.5em;
+}
+#arrow-down:hover {
+  color: #ff4444;
+}
+
+#portfolio-prompt {
+  margin-bottom: 3.5em;
+}
+
+.btn-default {
+  background: #e8e8e8;
+  width: 40%;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 0 2em 0;
+}
+
+#devcom-tile {
+  background-size: 100% 100%;
+  background-image: url("https://image.ibb.co/iicpzn/devcom.png");
+}
+#devcom-tile:hover {
+  background: #0b1c28;
+}
+
+#pcbuilders-tile {
+  background-size: 100% 100%;
+  background-image: url("https://preview.ibb.co/hTDC27/pcbuilders.png");
+}
+#pcbuilders-tile:hover {
+  background: #0b1c28;
+}
+
+#tribute-tile {
+  background-size: 100% 100%;
+  background-image: url("https://preview.ibb.co/dTXmvS/lan.png");
+}
+#tribute-tile:hover {
+  background: #0b1c28;
+}
+
+#app-tile {
+  background-size: 100% 100%;
+  background-image: url("https://image.ibb.co/dGZf5S/5x5Tile.png");
+}
+#app-tile:hover {
+  background: #0b1c28;
+}
+
+.project-tile {
+  margin: 0 2em 0 0;
+  width: 35%;
+  height: 25em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project-tile h2, .project-tile h6, .project-tile a {
+  color: #ff4444;
+  visibility: hidden;
+}
+.project-tile:hover {
+  background-image: none;
+}
+.project-tile:hover h2, .project-tile:hover h6, .project-tile:hover a {
+  visibility: visible;
+}
+
+.clicked {
+  background: #00111e;
+}
+.clicked h2, .clicked h6, .clicked a {
+  visibility: visible;
+}
+
+.portfolio-img {
+  margin: 0;
+  margin-top: 25px;
+  width: 100%;
+  height: auto;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 4em 0 4em 0;
+}
+.form-container form {
+  width: 35%;
+  border: 1px solid #ff4444;
+  padding: 1.1em;
+  color: #e8e8e8;
+}
+.form-container form .form-module {
+  width: 50%;
+}
+.form-container form .btn-container {
+  display: flex;
+  justify-content: center;
+}
+.form-container form .btn-primary {
+  background: #ff4444;
+  border: none;
+  width: 20%;
+}
+
+.contact-icons {
+  text-align: center;
+  margin-top: -3em;
+}
+.contact-icons .fa-3x:hover {
+  color: #ff4444;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 479px) {
+  .prompt h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  .page-section {
+    padding: 2em 0 3em 0;
+  }
+
+  #welcome-section {
+    height: 100vh;
+  }
+  #welcome-section .break {
+    display: inline;
+  }
+
+  .portfolio-container {
+    margin: 0;
+  }
+
+  .project-tile {
+    height: 10em;
+    width: 100%;
+    margin: 0 1em 1.7em 1em;
+  }
+  .project-tile h2 {
+    font-size: 1.2em;
+  }
+  .project-tile h6 {
+    font-size: 0.6em;
+  }
+  .project-tile a {
+    height: 70%;
+    width: 40%;
+  }
+
+  .form-container form {
+    width: 80%;
+  }
+  .form-container form .btn-primary {
+    width: 40%;
+  }
+
+  .contact-icons .fa-3x {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .prompt h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  .page-section {
+    padding: 2em 0 3em 0;
+  }
+
+  #welcome-container {
+    margin-bottom: 40px;
+  }
+  #welcome-container .break {
+    display: inline;
+  }
+
+  .portfolio-container {
+    margin: 0;
+  }
+
+  .project-tile {
+    height: 10em;
+    width: 45%;
+    margin: 0 0.5em 0.5em 0;
+  }
+  .project-tile h2 {
+    font-size: 1em;
+  }
+  .project-tile h6 {
+    font-size: 0.6em;
+  }
+
+  .form-container form {
+    width: 70%;
+  }
+  .form-container form .btn-primary {
+    width: 40%;
+  }
+
+  .contact-icons .fa-3x {
+    font-size: 2.5em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .prompt h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .page-section {
+    padding: 2em 0 3em 0;
+  }
+
+  #welcome-section {
+    padding-bottom: 10em;
+  }
+
+  .portfolio-section {
+    margin: 0 0.5em 0 0.5em;
+  }
+
+  .project-tile {
+    height: 12em;
+    width: 45%;
+    margin: 0;
+  }
+  .project-tile h2 {
+    font-size: 1.3em;
+  }
+  .project-tile h6 {
+    font-size: 0.75em;
+  }
+
+  .form-container form {
+    width: 65%;
+  }
+  .form-container form .btn-primary {
+    width: 40%;
+  }
+
+  .contact-icons .fa-3x {
+    font-size: 3.5em;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1441px) {
+  .prompt h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .page-section {
+    padding: 2em 0 3em 0;
+  }
+
+  #welcome-section {
+    padding-bottom: 10em;
+  }
+
+  .project-tile {
+    height: 15.5em;
+    width: 45%;
+    margin: 0 1em 0 1em;
+  }
+  .project-tile h2 {
+    font-size: 2.75em;
+  }
+  .project-tile h6 {
+    font-size: 0.9em;
+  }
+
+  .form-container form {
+    width: 65%;
+  }
+  .form-container form .btn-primary {
+    width: 40%;
+  }
+
+  .contact-icons .fa-3x {
+    font-size: 3.5em;
+  }
+}
+#particles-js {
+  z-index: 4;
+  height: 100%;
+  height: 100vh;
+}

@@ -1,0 +1,457 @@
+//variables
+$col-pri: #ff4444;
+$col-pri-hov: #ff3535;
+$col-light-bg1: #e5e5e5;
+$col-light-bg2: #bcbcbc;
+$col-txt-pri: #e8e8e8; 
+$col-well: #f2f2f2;
+$col-txt-well: #2b2b2b;
+$col-icons: #e8e8e8;
+$col-bg1: #00111e;
+$col-bg2: #0b1c28;
+
+html,
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  color: $col-txt-pri;
+}
+
+.page-section {
+  padding: 3em 0 4.5em 0;
+}
+
+#particles-js, #contact-section {
+  background-image: linear-gradient(132deg, $col-bg1 0%, $col-bg2 74%);
+}
+
+#projects {
+	background-image: linear-gradient(132deg, $col-light-bg1 0%, $col-light-bg2 74%);	
+}
+
+
+.fa-3x, .fa-2x {
+  margin: 20px;
+  color: $col-txt-pri;
+}
+
+:target {
+  display: block;
+  position: relative;
+  top: -10px;
+}
+
+.prompt {
+  margin: 1.5em 0 1.1em 0;
+}
+.prompt h1 {
+  font-size: 4em;
+  color: $col-pri;
+}
+
+.text-white {
+  color: $col-txt-pri;;
+}
+
+.text-bg {
+	color: $col-bg2 !important;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+
+//navbar
+.navbar {
+  padding: 15px 0 10px 0;
+	background-image: linear-gradient(132deg, $col-bg1 0%, $col-bg2 74%);
+}
+
+.nav-link {
+  color: $col-pri;
+  margin: 0 7px 0 7px;
+  font-size: 1.05em;
+	&:hover {
+  	color: $col-pri-hov;
+	}
+}
+
+span.navbar-toggler-icon {
+  border: 1px solid $col-pri;
+  color: $col-pri;
+}
+
+a.active {
+  color: $col-pri-hov !important;
+  background: none !important;
+  border: 1px solid $col-pri-hov;
+}
+
+a.navbar-brand {
+  color: $col-pri;
+  font-size: 25px;
+  margin-top: -10px;
+	&:hover {
+  	color: $col-pri-hov;
+	}
+}
+
+//welcome section css
+#welcome-section {
+	position: absolute;
+	z-index: 5;
+	height: 100vh;
+	padding: 1em 0 0 0;
+}
+
+#welcome-container {
+  margin: 30vh 0 0 0;	
+	
+	h2 { 
+		margin: 1em 0 3em 0;
+	}
+	.break {display: none;}
+	}
+
+#arrow-down {
+	color: $col-txt-pri;
+	margin-top: 50px;
+	font-size: 3.5em;	
+		
+		&:hover {
+			color: $col-pri;
+		}
+}
+
+
+//projects section css
+#portfolio-prompt {
+	margin-bottom: 3.5em;
+}
+
+.btn-default {
+	background: $col-txt-pri;
+	width: 40%;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 0 2em 0;
+}
+
+#devcom-tile {
+  background-size: 100% 100%;
+  background-image: url("https://image.ibb.co/iicpzn/devcom.png");
+	&:hover {
+  	background: $col-bg2;
+	}
+}
+
+#pcbuilders-tile {
+  background-size: 100% 100%;
+  background-image: url("https://preview.ibb.co/hTDC27/pcbuilders.png");
+		&:hover {
+  	background: $col-bg2;
+	}
+}
+
+#tribute-tile {
+  background-size: 100% 100%;
+  background-image: url("https://preview.ibb.co/dTXmvS/lan.png");
+		&:hover {
+  	background: $col-bg2;
+	}
+}
+
+#app-tile {
+  background-size: 100% 100%;
+  background-image: url("https://image.ibb.co/dGZf5S/5x5Tile.png");
+		&:hover {
+  	background: $col-bg2;
+	}
+}
+
+.project-tile {
+  margin: 0 2em 0 0;
+  width: 35%;
+  height: 25em;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+	h2,h6,a {
+		color: $col-pri;
+  	visibility: hidden;
+	}
+	
+	&:hover {
+  	background-image: none;
+		h2,h6,a {
+			  visibility: visible;
+		}
+	}
+}
+
+.clicked {
+	background: $col-bg1;
+	
+	h2,h6,a {
+			  visibility: visible;
+		}
+}
+
+.portfolio-img {
+  margin: 0;
+  margin-top: 25px;
+  width: 100%;
+  height: auto;
+}
+
+
+//contact section css
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 4em 0 4em 0;
+	
+	form {
+		width: 35%;
+		border: 1px solid $col-pri;
+		padding: 1.1em;  
+		color: $col-txt-pri;
+		
+		.form-module {
+			width: 50%;
+		}
+		
+		.btn-container {
+			display: flex;
+			justify-content: center;
+		}
+		
+		.btn-primary {
+			background: $col-pri;
+			border: none;
+			width: 20%;
+		}
+	}
+}
+
+
+.contact-icons {
+  text-align: center;
+  margin-top: -3em;
+	
+	.fa-3x:hover {
+		color: #ff4444;
+	}
+}
+
+
+//phones
+@media only screen and (min-width: 300px) and (max-width: 479px) {
+	
+  .prompt h1 { font-size: 2.5em; }
+
+  h2 { font-size: 1.1em; }
+	
+	.page-section { padding: 2em 0 3em 0; }
+	
+	#welcome-section {
+		height: 100vh;
+		
+		.break {display: inline;}
+	}
+	
+	.portfolio-container {
+  margin: 0;
+}
+		
+  .project-tile {
+    height: 10em;
+    width: 100%;
+		margin: 0 1em 1.7em 1em;
+		
+		h2 { 	font-size: 1.2em;	}
+		h6 { 	font-size: 0.6em; }
+		a {
+			height: 70%;
+			width: 40%;
+		}
+  }
+
+	.form-container form {
+		width: 80%;
+		
+		.btn-primary { width: 40%; }
+	}	
+	
+  .contact-icons .fa-3x { font-size: 2em; }
+}
+
+//phone landscape
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .prompt h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+	
+	.page-section {
+		 padding: 2em 0 3em 0;
+	}
+	
+	#welcome-container { 
+		margin-bottom: 40px; 
+		
+		.break {display: inline;}
+	}
+	
+	
+.portfolio-container {
+  margin: 0;
+}
+
+  .project-tile {
+    height: 10em;
+    width: 45%;
+		margin: 0 0.5em 0.5em 0;
+		
+		h2 {
+			font-size: 1em;
+		}
+		
+		h6 {
+			font-size: 0.6em;
+		}
+  }
+
+	.form-container form {
+	width: 70%;
+		
+		.btn-primary {
+			width: 40%;
+		}
+	}	
+	
+  .contact-icons .fa-3x {
+    font-size: 2.5em;
+  }
+}
+
+
+//ipads
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .prompt h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+	
+	.page-section {
+		 padding: 2em 0 3em 0;
+	}
+	
+	#welcome-section {
+  padding-bottom: 10em;
+}
+	
+	.portfolio-section {
+		margin: 0 0.5em 0 0.5em;
+	}
+
+	.project-tile {
+		height: 12em;
+		width: 45%;
+		margin: 0;
+
+		h2 {
+			font-size: 1.3em;
+		}
+
+		h6 {
+			font-size: 0.75em;
+		}
+	}
+
+	.form-container form {
+	width: 65%;
+		
+		.btn-primary {
+			width: 40%;
+		}
+	}	
+	
+  .contact-icons .fa-3x {
+    font-size: 3.5em;
+  }
+}
+
+
+//ipads
+@media only screen and (min-width: 992px) and (max-width: 1441px) {
+  .prompt h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+	
+	.page-section {
+		 padding: 2em 0 3em 0;
+	}
+	
+	#welcome-section {
+  padding-bottom: 10em;
+}
+	
+	
+
+  .project-tile {
+    height: 15.5em;
+    width: 45%;
+		margin: 0 1em 0 1em;
+		
+		h2 {
+			font-size: 2.75em;
+		}
+		
+		h6 {
+			font-size: 0.9em;
+		}
+  }
+
+	.form-container form {
+	width: 65%;
+		
+		.btn-primary {
+			width: 40%;
+		}
+	}	
+	
+  .contact-icons .fa-3x {
+    font-size: 3.5em;
+  }
+}
+
+
+
+#particles-js {
+	z-index: 4;
+	height: 100%;
+	height: 100vh;
+}
+
