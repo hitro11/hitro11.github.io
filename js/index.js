@@ -19,7 +19,7 @@ $(document).ready( function(e) {
 	
 	navHeight = $('.navbar').outerHeight(true);	
 	aWelcomePos = $("#a-welcome").offset().top - navHeight;
-	aPortfolioPos = $("#a-portfolio").offset().top - navHeight;
+	aPortfolioPos = $("#a-projects").offset().top - navHeight;
 	aContactPos = $("#a-contact").offset().top - navHeight;	
 	$navItem0 = $(".nav-link:eq(0)");
 	$navItem1 = $(".nav-link:eq(1)");
