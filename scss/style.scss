@@ -1,23 +1,11 @@
-//variables
-$col-pri: #ff4444;
-$col-pri-hov: #ff3535;
-$col-light-bg1: #e5e5e5;
-$col-light-bg2: #bcbcbc;
-$col-txt-pri: #e8e8e8; 
-$col-well: #f2f2f2;
-$col-txt-well: #2b2b2b;
-$col-icons: #e8e8e8;
-$col-bg1: #00111e;
-$col-bg2: #0b1c28;
-
 html,
 body {
-	max-width: 100%;
-	overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, p, li {
-  color: $col-txt-pri;
+  color: #e8e8e8;
 }
 
 .page-section {
@@ -25,17 +13,16 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 
 #particles-js, #contact-section {
-  background-image: linear-gradient(132deg, $col-bg1 0%, $col-bg2 74%);
+  background-image: linear-gradient(132deg, #00111e 0%, #0b1c28 74%);
 }
 
 #projects {
-	background-image: linear-gradient(132deg, $col-light-bg1 0%, $col-light-bg2 74%);	
+  background-image: linear-gradient(132deg, #e5e5e5 0%, #bcbcbc 74%);
 }
-
 
 .fa-3x, .fa-2x {
   margin: 20px;
-  color: $col-txt-pri;
+  color: #e8e8e8;
 }
 
 :target {
@@ -47,96 +34,92 @@ h1, h2, h3, h4, h5, h6, p, li {
 .prompt {
   margin: 1.5em 0 1.1em 0;
 }
+
 .prompt h1 {
   font-size: 4em;
-  color: $col-pri;
+  color: #ff4444;
 }
 
 .text-white {
-  color: $col-txt-pri;;
+  color: #e8e8e8;
 }
 
 .text-bg {
-	color: $col-bg2 !important;
+  color: #0b1c28 !important;
 }
 
 .center {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-
-//navbar
 .navbar {
   padding: 15px 0 10px 0;
-	background-image: linear-gradient(132deg, $col-bg1 0%, $col-bg2 74%);
+  background-image: linear-gradient(132deg, #00111e 0%, #0b1c28 74%);
 }
 
 .nav-link {
-  color: $col-pri;
+  color: #ff4444;
   margin: 0 7px 0 7px;
   font-size: 1.05em;
-	&:hover {
-  	color: $col-pri-hov;
-	}
+}
+.nav-link:hover {
+  color: #ff9191;
 }
 
 span.navbar-toggler-icon {
-  border: 1px solid $col-pri;
-  color: $col-pri;
+  border: 1px solid #ff4444;
+  color: #ff4444;
 }
 
 a.active {
-  color: $col-pri-hov !important;
+  color: #ff4444 !important;
   background: none !important;
-  border: 1px solid $col-pri-hov;
+  border-bottom: 1px solid #ff4444;
 }
 
 a.navbar-brand {
-  color: $col-pri;
+  color: #ff4444;
   font-size: 25px;
   margin-top: -10px;
-	&:hover {
-  	color: $col-pri-hov;
-	}
+}
+a.navbar-brand:hover {
+  color: #ff9191;
 }
 
-//welcome section css
 #welcome-section {
-	position: absolute;
-	z-index: 5;
-	height: 100vh;
-	padding: 1em 0 0 0;
+  position: absolute;
+  z-index: 5;
+  height: 100vh;
+  padding: 1em 0 0 0;
 }
 
 #welcome-container {
-  margin: 30vh 0 0 0;	
-	
-	h2 { 
-		margin: 1em 0 3em 0;
-	}
-	.break {display: none;}
-	}
-
-#arrow-down {
-	color: $col-txt-pri;
-	margin-top: 50px;
-	font-size: 3.5em;	
-		
-		&:hover {
-			color: $col-pri;
-		}
+  margin: 30vh 0 0 0;
+}
+#welcome-container h2 {
+  margin: 1em 0 3em 0;
+}
+#welcome-container .break {
+  display: none;
 }
 
+#arrow-down {
+  color: #e8e8e8;
+  margin-top: 50px;
+  font-size: 3.5em;
+}
+#arrow-down:hover {
+  color: #ff4444;
+}
 
-//projects section css
 #portfolio-prompt {
-	margin-bottom: 3.5em;
+  margin-bottom: 3.5em;
 }
 
 .btn-default {
-	background: $col-txt-pri;
-	width: 40%;
+  background: #e8e8e8;
+  width: 40%;
 }
 
 .portfolio-container {
@@ -149,64 +132,60 @@ a.navbar-brand {
 #devcom-tile {
   background-size: 100% 100%;
   background-image: url("https://image.ibb.co/iicpzn/devcom.png");
-	&:hover {
-  	background: $col-bg2;
-	}
+}
+#devcom-tile:hover {
+  background: #0b1c28;
 }
 
 #ytplayer-tile {
   background-size: 100% 100%;
   background-image: url("https://image.ibb.co/buLz1x/ytplayer.png");
-		&:hover {
-  	background: $col-bg2;
-	}
 }
-
+#ytplayer-tile:hover {
+  background: #0b1c28;
+}
 
 #tribute-tile {
   background-size: 100% 100%;
   background-image: url("https://preview.ibb.co/dTXmvS/lan.png");
-		&:hover {
-  	background: $col-bg2;
-	}
+}
+#tribute-tile:hover {
+  background: #0b1c28;
 }
 
 #app-tile {
   background-size: 100% 100%;
   background-image: url("https://image.ibb.co/dGZf5S/5x5Tile.png");
-		&:hover {
-  	background: $col-bg2;
-	}
+}
+#app-tile:hover {
+  background: #0b1c28;
 }
 
 .project-tile {
   margin: 0 2em 0 0;
   width: 35%;
   height: 22em;
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	
-	h2,h6,a {
-		color: $col-pri;
-  	visibility: hidden;
-	}
-	
-	&:hover {
-  	background-image: none;
-		h2,h6,a {
-			  visibility: visible;
-		}
-	}
+}
+.project-tile h2, .project-tile h6, .project-tile a {
+  color: #ff4444;
+  visibility: hidden;
+}
+.project-tile:hover {
+  background-image: none;
+}
+.project-tile:hover h2, .project-tile:hover h6, .project-tile:hover a {
+  visibility: visible;
 }
 
 .clicked {
-	background: $col-bg1;
-	
-	h2,h6,a {
-			  visibility: visible;
-		}
+  background: #00111e;
+}
+.clicked h2, .clicked h6, .clicked a {
+  visibility: visible;
 }
 
 .portfolio-img {
@@ -216,89 +195,89 @@ a.navbar-brand {
   height: auto;
 }
 
-
-//contact section css
 .form-container {
   display: flex;
   justify-content: center;
   margin: 4em 0 4em 0;
-	
-	form {
-		width: 35%;
-		border: 1px solid $col-pri;
-		padding: 1.1em;  
-		color: $col-txt-pri;
-		
-		.form-module {
-			width: 50%;
-		}
-		
-		.btn-container {
-			display: flex;
-			justify-content: center;
-		}
-		
-		.btn-primary {
-			background: $col-pri;
-			border: none;
-			width: 20%;
-		}
-	}
 }
-
+.form-container form {
+  width: 35%;
+  border: 1px solid #ff4444;
+  padding: 1.1em;
+  color: #e8e8e8;
+}
+.form-container form .form-module {
+  width: 50%;
+}
+.form-container form .btn-container {
+  display: flex;
+  justify-content: center;
+}
+.form-container form .btn-primary {
+  background: #ff4444;
+  border: none;
+  width: 20%;
+}
 
 .contact-icons {
   text-align: center;
   margin-top: -3em;
-	
-	.fa-3x:hover {
-		color: #ff4444;
-	}
+}
+.contact-icons .fa-3x:hover {
+  color: #ff4444;
 }
 
-
-//phones
 @media only screen and (min-width: 300px) and (max-width: 479px) {
-	
-  .prompt h1 { font-size: 2.5em; }
+  .prompt h1 {
+    font-size: 2.5em;
+  }
 
-  h2 { font-size: 1.1em; }
-	
-	.page-section { padding: 2em 0 3em 0; }
-	
-	#welcome-section {
-		height: 100vh;
-		
-		.break {display: inline;}
-	}
-	
-	.portfolio-container {
-  margin: 0;
-}
-		
+  h2 {
+    font-size: 1.1em;
+  }
+
+  .page-section {
+    padding: 2em 0 3em 0;
+  }
+
+  #welcome-section {
+    height: 100vh;
+  }
+  #welcome-section .break {
+    display: inline;
+  }
+
+  .portfolio-container {
+    margin: 0;
+  }
+
   .project-tile {
     height: 12em;
     width: 100%;
-		margin: 0 1em 1.7em 1em;
-		
-		h2 { 	font-size: 1.2em;	}
-		h6 { 	font-size: 0.6em; }
-		a {
-			height: 70%;
-			width: 40%;
-		}
+    margin: 0 1em 1.7em 1em;
+  }
+  .project-tile h2 {
+    font-size: 1.2em;
+  }
+  .project-tile h6 {
+    font-size: 0.6em;
+  }
+  .project-tile a {
+    height: 70%;
+    width: 40%;
   }
 
-	.form-container form {
-		width: 80%;
-		
-		.btn-primary { width: 40%; }
-	}	
-	
-  .contact-icons .fa-3x { font-size: 2em; }
-}
+  .form-container form {
+    width: 80%;
+  }
+  .form-container form .btn-primary {
+    width: 40%;
+  }
 
-//phone landscape
+  .contact-icons .fa-3x {
+    font-size: 2em;
+  }
+}
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .prompt h1 {
     font-size: 2.5em;
@@ -307,51 +286,45 @@ a.navbar-brand {
   h2 {
     font-size: 1.1em;
   }
-	
-	.page-section {
-		 padding: 2em 0 3em 0;
-	}
-	
-	#welcome-container { 
-		margin-bottom: 40px; 
-		
-		.break {display: inline;}
-	}
-	
-	
-.portfolio-container {
-  margin: 0;
-}
+
+  .page-section {
+    padding: 2em 0 3em 0;
+  }
+
+  #welcome-container {
+    margin-bottom: 40px;
+  }
+  #welcome-container .break {
+    display: inline;
+  }
+
+  .portfolio-container {
+    margin: 0;
+  }
 
   .project-tile {
     height: 10em;
     width: 45%;
-		margin: 0 0.5em 0.5em 0;
-		
-		h2 {
-			font-size: 1em;
-		}
-		
-		h6 {
-			font-size: 0.6em;
-		}
+    margin: 0 0.5em 0.5em 0;
+  }
+  .project-tile h2 {
+    font-size: 1em;
+  }
+  .project-tile h6 {
+    font-size: 0.6em;
   }
 
-	.form-container form {
-	width: 70%;
-		
-		.btn-primary {
-			width: 40%;
-		}
-	}	
-	
+  .form-container form {
+    width: 70%;
+  }
+  .form-container form .btn-primary {
+    width: 40%;
+  }
+
   .contact-icons .fa-3x {
     font-size: 2.5em;
   }
 }
-
-
-//ipads
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .prompt h1 {
     font-size: 4em;
@@ -360,48 +333,42 @@ a.navbar-brand {
   h2 {
     font-size: 2em;
   }
-	
-	.page-section {
-		 padding: 2em 0 3em 0;
-	}
-	
-	#welcome-section {
-  padding-bottom: 10em;
-}
-	
-	.portfolio-section {
-		margin: 0 0.5em 0 0.5em;
-	}
 
-	.project-tile {
-		height: 12em;
-		width: 45%;
-		margin: 0 1em 0 1em;
+  .page-section {
+    padding: 2em 0 3em 0;
+  }
 
-		h2 {
-			font-size: 1.3em;
-		}
+  #welcome-section {
+    padding-bottom: 10em;
+  }
 
-		h6 {
-			font-size: 0.75em;
-		}
-	}
+  .portfolio-section {
+    margin: 0 0.5em 0 0.5em;
+  }
 
-	.form-container form {
-	width: 65%;
-		
-		.btn-primary {
-			width: 40%;
-		}
-	}	
-	
+  .project-tile {
+    height: 12em;
+    width: 45%;
+    margin: 0 1em 0 1em;
+  }
+  .project-tile h2 {
+    font-size: 1.3em;
+  }
+  .project-tile h6 {
+    font-size: 0.75em;
+  }
+
+  .form-container form {
+    width: 65%;
+  }
+  .form-container form .btn-primary {
+    width: 40%;
+  }
+
   .contact-icons .fa-3x {
     font-size: 3.5em;
   }
 }
-
-
-//ipads
 @media only screen and (min-width: 992px) and (max-width: 1441px) {
   .prompt h1 {
     font-size: 4em;
@@ -410,57 +377,45 @@ a.navbar-brand {
   h2 {
     font-size: 2em;
   }
-	
-	.page-section {
-		 padding: 2em 0 3em 0;
-	}
-	
-	#welcome-section {
-  padding-bottom: 10em;
-}
-	
-	
+
+  .page-section {
+    padding: 2em 0 3em 0;
+  }
+
+  #welcome-section {
+    padding-bottom: 10em;
+  }
 
   .project-tile {
     height: 17em;
     width: 45%;
-		margin: 0 1em 0 1em;
-		
-		h2 {
-			font-size: 2.1em;
-		}
-		
-		h6 {
-			font-size: 0.9em;
-		}
+    margin: 0 1em 0 1em;
+  }
+  .project-tile h2 {
+    font-size: 2.1em;
+  }
+  .project-tile h6 {
+    font-size: 0.9em;
   }
 
-	.form-container form {
-	width: 65%;
-		
-		.btn-primary {
-			width: 40%;
-		}
-	}	
-	
+  .form-container form {
+    width: 65%;
+  }
+  .form-container form .btn-primary {
+    width: 40%;
+  }
+
   .contact-icons .fa-3x {
     font-size: 3.5em;
   }
 }
-
-
-
 #particles-js {
-	z-index: 4;
-	height: 100%;
-	height: 100vh;
+  z-index: 4;
+  height: 100%;
+  height: 100vh;
 }
 
-
-
-//4K
-@media only screen and (min-width: 1442px) and (max-width: 1920)
-{
+@media only screen and (min-width: 1442px) and (max-width: 1920) {
   .prompt h1 {
     font-size: 6em;
   }
@@ -468,49 +423,40 @@ a.navbar-brand {
   h2 {
     font-size: 3em;
   }
-	
-	.page-section {
-		 padding: 2em 0 3em 0;
-	}
-	
-	#welcome-section {
-  padding-bottom: 10em;
-}
-	
-	
+
+  .page-section {
+    padding: 2em 0 3em 0;
+  }
+
+  #welcome-section {
+    padding-bottom: 10em;
+  }
 
   .project-tile {
     height: 29em;
     width: 45%;
-		margin: 0 1em 0 1em;
-		
-		h2 {
-			font-size: 2.7em;
-		}
-		
-		h6 {
-			font-size: 1.5em;
-		}
+    margin: 0 1em 0 1em;
+  }
+  .project-tile h2 {
+    font-size: 2.7em;
+  }
+  .project-tile h6 {
+    font-size: 1.5em;
   }
 
-	.form-container form {
-	width: 45%;
-		
-		.btn-primary {
-			width: 40%;
-		}
-	}	
-	
+  .form-container form {
+    width: 45%;
+  }
+  .form-container form .btn-primary {
+    width: 40%;
+  }
+
   .contact-icons .fa-3x {
     font-size: 4em;
   }
 }
-
-
-
 #particles-js {
-	z-index: 4;
-	height: 100%;
-	height: 100vh;
+  z-index: 4;
+  height: 100%;
+  height: 100vh;
 }
-
