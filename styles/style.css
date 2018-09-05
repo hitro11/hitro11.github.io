@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6, p, li {
   font-size: 1.05em;
 }
 .nav-link:hover {
-  color: #ff3535;
+  color: #ff9191;
 }
 
 span.navbar-toggler-icon {
@@ -73,9 +73,9 @@ span.navbar-toggler-icon {
 }
 
 a.active {
-  color: #ff3535 !important;
+  color: #ff4444 !important;
   background: none !important;
-  border: 1px solid #ff3535;
+  border-bottom: 1px solid #ff4444;
 }
 
 a.navbar-brand {
@@ -84,7 +84,7 @@ a.navbar-brand {
   margin-top: -10px;
 }
 a.navbar-brand:hover {
-  color: #ff3535;
+  color: #ff9191;
 }
 
 #welcome-section {
@@ -145,11 +145,11 @@ a.navbar-brand:hover {
   background: #0b1c28;
 }
 
-#tribute-tile {
+#forecaster-tile {
   background-size: 100% 100%;
-  background-image: url("https://preview.ibb.co/dTXmvS/lan.png");
+  background-image: url("../assets/img/forecaster.PNG");
 }
-#tribute-tile:hover {
+#forecaster-tile:hover {
   background: #0b1c28;
 }
 
@@ -460,3 +460,5 @@ a.navbar-brand:hover {
   height: 100%;
   height: 100vh;
 }
+
+/*# sourceMappingURL=scss/style.css.map */
