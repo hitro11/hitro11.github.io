@@ -20,9 +20,12 @@ h1, h2, h3, h4, h5, h6, p, li {
   background-image: linear-gradient(132deg, #e5e5e5 0%, #bcbcbc 74%);
 }
 
-.fa-3x, .fa-2x {
+.fa-3x {
   margin: 20px;
   color: #e8e8e8;
+}
+.fa-3x:hover {
+  color: #d95454;
 }
 
 :target {
@@ -37,7 +40,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 
 .prompt h1 {
   font-size: 4em;
-  color: #ff4444;
+  color: #b82929;
 }
 
 .text-white {
@@ -59,32 +62,32 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 
 .nav-link {
-  color: #ff4444;
+  color: #b82929;
   margin: 0 7px 0 7px;
   font-size: 1.05em;
 }
 .nav-link:hover {
-  color: #ff9191;
+  color: #d95454;
 }
 
 span.navbar-toggler-icon {
-  border: 1px solid #ff4444;
-  color: #ff4444;
+  border: 1px solid #b82929;
+  color: #b82929;
 }
 
 a.active {
-  color: #ff4444 !important;
+  color: #b82929 !important;
   background: none !important;
-  border-bottom: 1px solid #ff4444;
+  border-bottom: 1px solid #b82929;
 }
 
 a.navbar-brand {
-  color: #ff4444;
+  color: #b82929;
   font-size: 25px;
   margin-top: -10px;
 }
 a.navbar-brand:hover {
-  color: #ff9191;
+  color: #d95454;
 }
 
 #welcome-section {
@@ -106,11 +109,14 @@ a.navbar-brand:hover {
 
 #arrow-down {
   color: #e8e8e8;
-  margin-top: 50px;
   font-size: 3.5em;
 }
 #arrow-down:hover {
-  color: #ff4444;
+  color: #d95454;
+}
+
+.arr-dwn-cont {
+  margin-top: 5rem;
 }
 
 #portfolio-prompt {
@@ -171,7 +177,7 @@ a.navbar-brand:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .project-tile h2, .project-tile h6, .project-tile a {
-  color: #ff4444;
+  color: #b82929;
   visibility: hidden;
 }
 .project-tile:hover {
@@ -202,7 +208,7 @@ a.navbar-brand:hover {
 }
 .form-container form {
   width: 35%;
-  border: 1px solid #ff4444;
+  border: 1px solid #b82929;
   padding: 1.1em;
   color: #e8e8e8;
 }
@@ -214,17 +220,9 @@ a.navbar-brand:hover {
   justify-content: center;
 }
 .form-container form .btn-primary {
-  background: #ff4444;
+  background: #b82929;
   border: none;
   width: 20%;
-}
-
-.contact-icons {
-  text-align: center;
-  margin-top: -3em;
-}
-.contact-icons .fa-3x:hover {
-  color: #ff4444;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 479px) {
@@ -461,4 +459,4 @@ a.navbar-brand:hover {
   height: 100vh;
 }
 
-/*# sourceMappingURL=scss/style.css.map */
+/*# sourceMappingURL=style.css.map */

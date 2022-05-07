@@ -1,5 +1,5 @@
 //variables
-$col-pri: #ff4444;
+$col-pri: #b82929;
 $col-pri-hov: lighten($col-pri, 15%);
 $col-light-bg1: #e5e5e5;
 $col-light-bg2: #bcbcbc;
@@ -32,10 +32,12 @@ h1, h2, h3, h4, h5, h6, p, li {
 	background-image: linear-gradient(132deg, $col-light-bg1 0%, $col-light-bg2 74%);	
 }
 
-
-.fa-3x, .fa-2x {
+.fa-3x {
   margin: 20px;
   color: $col-txt-pri;
+  &:hover {
+	  color: $col-pri-hov;
+  }
 }
 
 :target {
@@ -120,12 +122,14 @@ a.navbar-brand {
 
 #arrow-down {
 	color: $col-txt-pri;
-	margin-top: 50px;
-	font-size: 3.5em;	
-		
-		&:hover {
-			color: $col-pri;
-		}
+	font-size: 3.5em;
+	&:hover {
+		color: $col-pri-hov;
+	}
+}
+
+.arr-dwn-cont {
+	margin-top: 5rem;
 }
 
 
@@ -161,7 +165,6 @@ a.navbar-brand {
   	background: $col-bg2;
 	}
 }
-
 
 #forecaster-tile {
   background-size: 100% 100%;
@@ -203,10 +206,9 @@ a.navbar-brand {
 
 .clicked {
 	background: $col-bg1;
-	
 	h2,h6,a {
-			  visibility: visible;
-		}
+		visibility: visible;
+	}
 }
 
 .portfolio-img {
@@ -243,16 +245,6 @@ a.navbar-brand {
 			border: none;
 			width: 20%;
 		}
-	}
-}
-
-
-.contact-icons {
-  text-align: center;
-  margin-top: -3em;
-	
-	.fa-3x:hover {
-		color: #ff4444;
 	}
 }
 
